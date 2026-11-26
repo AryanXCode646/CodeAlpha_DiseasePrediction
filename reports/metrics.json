@@ -1,0 +1,88 @@
+{
+  "selected_model": "logistic_regression",
+  "cv_results": {
+    "logistic_regression": {
+      "accuracy": 0.9714285714285714,
+      "precision": 0.9644970414201184,
+      "recall": 0.9588235294117647,
+      "f1_score": 0.9616519174041298,
+      "roc_auc": 0.9950257997936017
+    },
+    "svm_rbf": {
+      "accuracy": 0.9714285714285714,
+      "precision": 0.9644970414201184,
+      "recall": 0.9588235294117647,
+      "f1_score": 0.9616519174041298,
+      "roc_auc": 0.9945510835913313
+    },
+    "random_forest": {
+      "accuracy": 0.9604395604395605,
+      "precision": 0.9418604651162791,
+      "recall": 0.9529411764705882,
+      "f1_score": 0.9473684210526315,
+      "roc_auc": 0.9904437564499484
+    },
+    "xgboost": {
+      "accuracy": 0.967032967032967,
+      "precision": 0.9585798816568047,
+      "recall": 0.9529411764705882,
+      "f1_score": 0.9557522123893806,
+      "roc_auc": 0.9930237358101135
+    }
+  },
+  "test_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.9736842105263158,
+      "precision": 0.975609756097561,
+      "recall": 0.9523809523809523,
+      "f1_score": 0.963855421686747,
+      "roc_auc": 0.9953703703703703
+    },
+    "svm_rbf": {
+      "accuracy": 0.9824561403508771,
+      "precision": 0.9761904761904762,
+      "recall": 0.9761904761904762,
+      "f1_score": 0.9761904761904762,
+      "roc_auc": 0.9953703703703705
+    },
+    "random_forest": {
+      "accuracy": 0.9736842105263158,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.9629629629629629,
+      "roc_auc": 0.998015873015873
+    },
+    "xgboost": {
+      "accuracy": 0.9736842105263158,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.9629629629629629,
+      "roc_auc": 0.9970238095238095
+    }
+  },
+  "confusion_matrix": [
+    [
+      71,
+      1
+    ],
+    [
+      2,
+      40
+    ]
+  ],
+  "false_negatives_malignant": 2,
+  "classification_report": "               precision    recall  f1-score   support\n\n   Benign (0)       0.97      0.99      0.98        72\nMalignant (1)       0.98      0.95      0.96        42\n\n     accuracy                           0.97       114\n    macro avg       0.97      0.97      0.97       114\n weighted avg       0.97      0.97      0.97       114\n",
+  "split_sensitivity": {
+    "seeds": [
+      7,
+      21,
+      42,
+      84,
+      123
+    ],
+    "recall_mean": 0.9619047619047618,
+    "recall_std": 0.011664236870396099,
+    "roc_auc_mean": 0.9941137566137567,
+    "roc_auc_std": 0.003348938862743962
+  }
+}
