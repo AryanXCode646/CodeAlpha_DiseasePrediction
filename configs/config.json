@@ -9,6 +9,7 @@
     "cv_folds": 5,
     "random_state": 42,
     "selection_metric": "roc_auc",
+    "threshold_strategy": "f2_oof",
     "model_output_path": "models/disease_prediction_bundle.joblib"
   },
   "evaluation": {
